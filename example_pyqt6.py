@@ -12,6 +12,13 @@ from connection import Data
 class ExpenseTracker(QMainWindow):
     def __init__(self):
         super(ExpenseTracker, self).__init__()
+        
+# Создание переменной ui
+# После знака равно идет присваивание переменной ui класса Ui_MainWindow()
+# Это просто создание объекта
+# Везде где потом используется слово ui это просто использование методов объета (класса)
+# К примеру ui.setupUi(self) это использование метода setupUi() в объекте ui
+        
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.conn = Data()
